@@ -57,6 +57,7 @@ export default {
         <div class="pl-1 pt-1 text-white font-mono text-xs h-[95%] overflow-y-auto" id="console">
           <p class="pb-1">Last login: Wed Sep 25 09:11:04 on ttys002</p>
           <p class="pb-1">Monstruo-Servers-de-Seb-2:~ sebdev$ ping {{ clientIP }}</p>
+          <p class="pb-1">PING {{clientIP }}: 56 data bytes</p>
           <p v-for="(ping, index) in pingList" :key="index" class="pb-1">
             {{ ping }}
           </p>
