@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="relative bg-black/95 h-screen w-screen">
+  <div class="relative bg-black/95 h-screen w-screen overflow-hidden">
     <MacTerminal :clientIP="clientIP"/>
   </div>
 </template>
