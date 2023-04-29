@@ -2,7 +2,6 @@
 import MacTerminal from "@/components/MacTerminal.vue";
 import AnonymousImage from "../../Components/AnonymousImage.vue";
 import CodingImage from "@/Components/CodingImage.vue";
-import { defineProps } from 'vue';
 
 const props = defineProps({
   clientIP: {
