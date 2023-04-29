@@ -10,6 +10,10 @@ export default {
   },
   methods: {
     addPing() {
+    if (this.pingList.length === 20) {
+        clearInterval(this.interval);
+        return;
+    }
       this.pingList.push(
         "64 bytes from " +
           this.clientIP +
