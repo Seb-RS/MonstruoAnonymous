@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <div class="absolute flex mt-10 inset-0 m-auto text-white">
+  <div class="rotateAX absolute flex mt-10 inset-0 m-auto text-white">
     <div class="md:w-1/2 mx-auto">
       <div
         class="w-full shadow-2xl subpixel-antialiased rounded h-[90%] bg-black border-black mx-auto"
@@ -53,3 +53,9 @@ export default {
     </div>
   </div>
 </template>
+
+<style>
+.rotateAX{
+    transform: rotate3d(1, 0, 0, 6deg) rotate3d(0, 1, 0, 20deg);
+}
+</style>
