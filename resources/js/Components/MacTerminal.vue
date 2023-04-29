@@ -21,7 +21,7 @@ export default {
     },
   },
   mounted() {
-    setInterval(this.addPing, 1000); // Agregar un nuevo ping cada 3 segundos
+    setInterval(this.addPing, 1000);
   },
 };
 </script>
