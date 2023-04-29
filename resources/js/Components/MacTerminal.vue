@@ -56,11 +56,11 @@ export default {
             <p class="text-center text-xs">sebdev — ping {{ clientIP }} — 109x31</p>
           </div>
         </div>
-        <div class="pl-1 pt-1 text-white font-mono text-xs h-[95%] overflow-y-auto" id="console">
-          <p class="pb-1">Last login: Wed Sep 25 09:11:04 on ttys002</p>
-          <p class="pb-1">Monstruo-Servers-de-Seb-2:~ sebdev$ ping -c 20 {{ clientIP }}</p>
-          <p class="pb-1">PING {{clientIP }}: 56 data bytes</p>
-          <p v-for="(ping, index) in pingList" :key="index" class="pb-1">
+        <div class="pl-1 pt-1 md:pt-[1px] text-white font-mono text-xs md:text-lg lg:text-xl h-[95%] overflow-y-auto" id="console">
+          <p class="pb-1 md:pb-[1px]">Last login: Wed Sep 25 09:11:04 on ttys002</p>
+          <p class="pb-1 md:pb-[1px]">Monstruo-Servers-de-Seb-2:~ sebdev$ ping -c 20 {{ clientIP }}</p>
+          <p class="pb-1 md:pb-[1px]">PING {{clientIP }}: 56 data bytes</p>
+          <p v-for="(ping, index) in pingList" :key="index" class="pb-1 md:pb-[1px]">
             {{ ping }}
           </p>
         </div>
