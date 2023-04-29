@@ -8,9 +8,6 @@ export default {
       pingList: [],
     };
   },
-  created() {
-    this.pingList.push("64 bytes from " + this.clientIP + " icmp_seq=1 ttl=242 time="+((Math.random() * 10.0) + 20.0).toFixed(3));
-  },
   methods: {
     addPing() {
       this.pingList.push(
