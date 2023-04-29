@@ -71,6 +71,6 @@ export default {
 
 <style>
 .rotateAX{
-    transform: rotate3d(1, 0, 0, 6deg) rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(1, 0, 0, 6deg) rotate3d(0, 1, 0, 23deg);
 }
 </style>
