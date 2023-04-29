@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <div class="rotateAX absolute flex mt-10 inset-0 m-auto text-white">
+  <div class="rotateAX absolute flex mt-10 inset-0 m-auto text-white opacity-70">
     <div class="md:w-1/2 mx-auto">
       <div
         class="w-full shadow-2xl subpixel-antialiased rounded h-[90%] bg-black border-black mx-auto"
