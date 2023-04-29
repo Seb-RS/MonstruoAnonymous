@@ -18,7 +18,7 @@ export default {
         "64 bytes from " +
           this.clientIP +
           " icmp_seq=" +
-          (this.pingList.length + 1) +
+          (this.pingList.length) +
           " ttl=242 time="
           +((Math.random() * 10.0) + 20.0).toFixed(3)
       );
