@@ -31,8 +31,8 @@ export default {
 </script>
 
 <template>
-  <div class="rotateAX absolute flex mt-10 inset-0 m-auto text-white opacity-70">
-    <div class="md:w-1/2 mx-auto">
+  <div class="rotateAX absolute flex mt-10 inset-0 m-auto text-white opacity-70 md:ml-56">
+    <div class="md:w-[70%] mx-auto">
       <div
         class="w-full shadow-2xl subpixel-antialiased rounded max-h-[90%] h-[90%] bg-black border-black mx-auto"
       >
