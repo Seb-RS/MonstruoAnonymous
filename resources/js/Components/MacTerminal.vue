@@ -11,17 +11,17 @@ export default {
   },
   methods: {
     addPing() {
-    if (this.pingList.length === 20) {
+      if (this.pingList.length === 20) {
         clearInterval(this.interval);
         return;
-    }
+      }
       this.pingList.push(
         "64 bytes from " +
           this.clientIP +
           ": icmp_seq=" +
-          (this.pingList.length) +
-          " ttl=242 time="
-          +((Math.random() * 10.0) + 20.0).toFixed(3)
+          this.pingList.length +
+          " ttl=242 time=" +
+          (Math.random() * 10.0 + 20.0).toFixed(3)
       );
     },
     setActualDate() {
@@ -74,10 +74,15 @@ export default {
             <p class="text-center text-xs">sebdev — ping {{ clientIP }} — 109x31</p>
           </div>
         </div>
-        <div class="pl-1 pt-1 md:pt-[1px] text-white font-mono text-xs md:text-lg lg:text-xl h-[95%] overflow-y-auto mt-[1px]" id="console">
-          <p class="pb-1 md:pb-[1px]">Last login: {{currentDate}} on ttys002</p>
-          <p class="pb-1 md:pb-[1px]">Monstruo-Servers-de-Seb-2:~ sebdev$ ping -c 20 {{ clientIP }}</p>
-          <p class="pb-1 md:pb-[1px]">PING {{clientIP }}: 56 data bytes</p>
+        <div
+          class="pl-1 pt-1 md:pt-[1px] text-white font-mono text-xs md:text-lg lg:text-xl h-[95%] overflow-y-auto mt-[1px]"
+          id="console"
+        >
+          <p class="pb-1 md:pb-[1px]">Last login: {{ currentDate }} on ttys002</p>
+          <p class="pb-1 md:pb-[1px]">
+            Monstruo-Servers-de-Seb-2:~ sebdev$ ping -c 20 {{ clientIP }}
+          </p>
+          <p class="pb-1 md:pb-[1px]">PING {{ clientIP }}: 56 data bytes</p>
           <p v-for="(ping, index) in pingList" :key="index" class="pb-1 md:pb-[1px]">
             {{ ping }}
           </p>
@@ -88,7 +93,7 @@ export default {
 </template>
 
 <style>
-.rotateAX{
-    transform: rotate3d(1, 0, 0, 6deg) rotate3d(0, 1, 0, 23deg);
+.rotateAX {
+  transform: rotate3d(1, 0, 0, 6deg) rotate3d(0, 1, 0, 23deg);
 }
 </style>
