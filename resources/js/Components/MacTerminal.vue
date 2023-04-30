@@ -6,6 +6,7 @@ export default {
   data() {
     return {
       pingList: [],
+      currentDate: "",
     };
   },
   methods: {
@@ -23,9 +24,26 @@ export default {
           +((Math.random() * 10.0) + 20.0).toFixed(3)
       );
     },
+    setActualDate() {
+      const date = new Date();
+      const formattedDate =
+        date.toString().slice(0, 3) +
+        " " +
+        date.toString().slice(4, 7) +
+        " " +
+        date.getDate() +
+        " " +
+        date.getHours() +
+        ":" +
+        date.getMinutes() +
+        ":" +
+        date.getSeconds();
+      this.currentDate = formattedDate;
+    },
   },
   mounted() {
     setInterval(this.addPing, 1000);
+    this.setActualDate();
   },
 };
 </script>
@@ -57,7 +75,7 @@ export default {
           </div>
         </div>
         <div class="pl-1 pt-1 md:pt-[1px] text-white font-mono text-xs md:text-lg lg:text-xl h-[95%] overflow-y-auto mt-[1px]" id="console">
-          <p class="pb-1 md:pb-[1px]">Last login: Wed Sep 25 09:11:04 on ttys002</p>
+          <p class="pb-1 md:pb-[1px]">Last login: {{currentDate}} on ttys002</p>
           <p class="pb-1 md:pb-[1px]">Monstruo-Servers-de-Seb-2:~ sebdev$ ping -c 20 {{ clientIP }}</p>
           <p class="pb-1 md:pb-[1px]">PING {{clientIP }}: 56 data bytes</p>
           <p v-for="(ping, index) in pingList" :key="index" class="pb-1 md:pb-[1px]">
