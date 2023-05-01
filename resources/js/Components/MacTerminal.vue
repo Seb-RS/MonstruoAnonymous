@@ -76,7 +76,7 @@ export default {
           </div>
         </div>
         <div
-          class="pl-1 pt-1 md:pt-[1px] text-white font-mono text-xs md:text-lg lg:text-xl leading-normal lg:leading-5 h-[95%] overflow-y-auto space-y-[3px]" style="line-height: 20px;"
+          class="pt-1 px-2 md:pt-[1px] text-white font-mono text-xs md:text-lg lg:text-xl lg:leading-5 h-[95%] overflow-y-auto space-y-[3px]"
           id="console"
         >
           <p>Last login: {{ currentDate }} on ttys002</p>
