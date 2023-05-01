@@ -21,7 +21,8 @@ export default {
           ": icmp_seq=" +
           this.pingList.length +
           " ttl=242 time=" +
-          (Math.random() * 10.0 + 20.0).toFixed(3)
+          (Math.random() * 10.0 + 20.0).toFixed(3) +
+          " ms"
       );
     },
     setActualDate() {
