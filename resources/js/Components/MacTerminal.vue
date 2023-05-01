@@ -76,15 +76,15 @@ export default {
           </div>
         </div>
         <div
-          class="pl-1 pt-1 md:pt-[1px] text-white font-mono text-xs md:text-lg lg:text-xl h-[95%] overflow-y-auto mt-[1px]"
+          class="pl-1 pt-1 md:pt-[1px] text-white font-mono text-xs md:text-lg lg:text-xl leading-normal lg:leading-5 h-[95%] overflow-y-auto space-y-[3px]" style="line-height: 20px;"
           id="console"
         >
-          <p class="pb-1 md:pb-[1px]">Last login: {{ currentDate }} on ttys002</p>
-          <p class="pb-1 md:pb-[1px]">
+          <p>Last login: {{ currentDate }} on ttys002</p>
+          <p>
             Monstruo-Servers-de-Seb-2:~ sebdev$ ping -c 20 {{ clientIP }}
           </p>
-          <p class="pb-1 md:pb-[1px]">PING {{ clientIP }}: 56 data bytes</p>
-          <p v-for="(ping, index) in pingList" :key="index" class="pb-1 md:pb-[1px]">
+          <p>PING {{ clientIP }}: 56 data bytes</p>
+          <p v-for="(ping, index) in pingList" :key="index">
             {{ ping }}
           </p>
         </div>
